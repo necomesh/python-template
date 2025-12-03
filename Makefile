@@ -13,3 +13,6 @@ install:
 
 update:
 	copier update 
+
+serving:
+	uv run python -m bentoml serve {{project_name}}.serving.service:MLService --reload
