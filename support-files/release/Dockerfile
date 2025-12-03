@@ -1,4 +1,5 @@
 FROM python:3.12
+WORKDIR /apps
 ARG NEXUS_PYTHON_REPOSITY
 
 RUN sed -i 's/deb.debian.org/repo.huaweicloud.com/g' /etc/apt/sources.list.d/debian.sources
